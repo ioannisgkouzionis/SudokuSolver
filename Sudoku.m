@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+load templates;
+figure(1);
+I=imread('puzzles\\sudoku3.jpg','jpg');
+showSolution=false;
+showProgress=true;
+cornerExtractionMethod='auto';
+% cornerExtractionMethod='manual';
+sudokuReader(I,showSolution,templates,cornerExtractionMethod,showProgress);
